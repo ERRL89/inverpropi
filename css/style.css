@@ -172,6 +172,11 @@ body {
   color: rgb(7, 29, 61);
 }
 
+.imgT {
+  height: 450px !important;
+  width: 750px !important;
+}
+
 .btnCotizacion {
   height: 50px !important;
   border-radius: 10px !important;
@@ -196,7 +201,7 @@ body {
 
 .btnCustomContact {
   background-color: rgb(7, 29, 61) !important;
-  color: white !important;
+  color: #F5C434 !important;
   transition: 0.3s ease-in-out !important;
 }
 .btnCustomContact:hover {
@@ -205,14 +210,15 @@ body {
   box-shadow: 3px 3px 10px rgba(7, 29, 61, 0.701) !important;
 }
 
-.porque {
-  background-color: red !important;
+.imgBeneficios {
+  height: 750px !important;
+  width: 750px !important;
 }
 
 .containerCards {
   margin-top: 75px !important;
   position: relative;
-  width: 95%;
+  width: 100%;
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -436,111 +442,14 @@ body {
      object-fit: cover;
 }
 
-.contacto2 {
-  position: fixed;
-  bottom: 30px;
-  right: 5px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-}
-.contacto2 .contenedor {
-  position: relative;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-direction: column;
-  gap: 20px;
-  background: rgb(0, 0, 0);
-  border: 1px solid rgba(37, 140, 203, 0.3);
-  box-shadow: 3px 3px 10px rgb(255, 255, 255), -3px -3px 10px rgrgb(255, 255, 255);
-  height: 350px;
-  width: 50px;
-  transition: 0.5s;
-  border-radius: 30px;
-}
-.contacto2 .contenedor.active {
-  transition: 0.5s;
-  height: 130px;
-  width: 50px;
-}
-.contacto2 .contenedor.active2 {
-  transition: 0.5s;
-  flex-direction: row;
-  width: 350px;
-  justify-content: center;
-  gap: 50px;
-}
-.contacto2 .contenedor .qr2 img {
-  transition: 0.5s;
-  width: 0px;
-  visibility: hidden;
-  opacity: 0;
-}
-.contacto2 .contenedor .qr2.active2 img {
-  transition: 0.5s;
-  width: 200px;
-  visibility: visible;
-  opacity: 1;
-}
-.contacto2 .contenedor .botones {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-direction: column;
-  margin-top: -30px;
-  gap: 28px;
-}
-.contacto2 .contenedor .botones a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-}
-.contacto2 .contenedor .botones a span {
-  color: rgb(255, 255, 255);
-  font-size: 15px;
-  font-family: "Montserrat", sans-serif;
-  transform: rotate(0deg);
-}
-.contacto2 .contenedor .botones .btn {
-  position: relative;
-  font-size: 25px;
-  color: rgb(255, 255, 255);
-  transition: 0.5s;
-}
-.contacto2 .contenedor .botones .btn:hover {
-  transform: translateY(-3px);
-}
-.contacto2 .contenedor .botones.active {
-  transition: 0.5s;
-}
-.contacto2 .contenedor .botones.active :nth-child(3) {
-  opacity: 0;
-  visibility: hidden;
-}
-.contacto2 .contenedor .botones.active :nth-child(4) {
-  opacity: 0;
-  visibility: hidden;
-}
-.contacto2 .contenedor .botones.active :nth-child(5) {
-  opacity: 0;
-  visibility: hidden;
-}
-.contacto2 .contenedor .botones.active :nth-child(6) {
-  opacity: 0;
-  visibility: hidden;
-}
-
 .contacto_footer {
   position: relative;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(7, 29, 61);
   box-shadow: 2px 2px 20px rgb(37, 140, 203);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 475px;
+  height: 435px !important;
   width: 100%;
   z-index: 1000;
   margin-top: 50px;
@@ -551,7 +460,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
   height: 100%;
   gap: 10px;
   padding: 25px;
@@ -579,21 +488,19 @@ body {
   padding: 10px 25px;
   border-radius: 10px;
   margin-top: 10px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(9, 9, 121) 35%, rgb(0, 212, 255) 100%);
+  background: #F5C434;
   transition: 0.3s ease-in-out;
 }
 .contacto_footer .preferencia a .cotiza_ahora2 span {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  color: rgb(255, 255, 255);
+  color: rgb(7, 29, 61);
   font-weight: 600;
   letter-spacing: 2px;
 }
 .contacto_footer .preferencia a .cotiza_ahora2:hover {
   transition: 0.3s ease-in-out;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7) 0%, rgba(9, 9, 121, 0.7) 35%, rgba(0, 212, 255, 0.7) 100%);
+  background: rgba(245, 197, 52, 0.6705882353);
 }
 .contacto_footer .preferencia .datoscontacto2 {
   display: flex;
@@ -604,14 +511,14 @@ body {
 }
 .contacto_footer .preferencia .datoscontacto2 ion-icon {
   font-size: 28px;
-  color: rgb(37, 140, 203);
+  color: #F5C434;
   background-color: transparent;
   padding: 7px;
   border-radius: 50%;
   transition: 0.3s ease-in-out;
 }
 .contacto_footer .preferencia .datoscontacto2 ion-icon:hover {
-  color: rgb(0, 212, 255);
+  color: rgba(245, 197, 52, 0.631372549);
   transform: translateY(-3px);
 }
 .contacto_footer .preferencia .numeros_telefono {
@@ -645,46 +552,29 @@ body {
   font-size: 13px;
   font-family: "Montserrat";
 }
-.contacto_footer .ubicacion {
-  position: relative;
+
+.btnCotizacionContainer {
+  width: 25vw;
+  font-size: 1.25em !important;
+}
+.btnCotizacionContainer .btnCotizacion {
+  text-decoration: none !important;
+}
+
+.txtBtn {
+  margin-top: 20px !important;
+}
+
+.proyecto {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
-  flex-direction: column;
-  width: 50%;
-  height: 100%;
-  gap: 20px;
-  background-image: url(../images/fondo.png);
 }
-.contacto_footer .ubicacion::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgb(0, 0, 0);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-}
-.contacto_footer .ubicacion iframe {
-  border-radius: 20px;
-  border: 1px solid white;
-  width: 650px;
-  height: 325px;
-  box-shadow: 5px 5px 15px rgb(255, 255, 255);
-  z-index: 1000;
-}
-.contacto_footer .ubicacion a {
-  list-style-type: none;
-  text-decoration: none;
-  z-index: 1000;
-}
-.contacto_footer .ubicacion a span {
-  color: rgb(37, 140, 203);
-  font-weight: 400;
-  font-size: 15px;
-  font-family: "Montserrat";
+
+.descripcion {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 @media screen and (max-width: 960px) {
@@ -931,12 +821,11 @@ body {
   }
   .contacto_footer {
     position: relative;
-    background-color: rgb(0, 0, 0);
-    box-shadow: 2px 2px 20px rgb(37, 140, 203);
+    background-color: rgb(7, 29, 61);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 425px;
+    height: 400px;
     width: 100%;
     z-index: 1000;
     margin-top: 50px;
@@ -947,7 +836,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 50%;
+    width: 100%;
     height: 100%;
     gap: 5px;
     padding: 25px;
@@ -1019,14 +908,14 @@ body {
   }
   .contacto_footer .preferencia .datoscontacto2 ion-icon {
     font-size: 28px;
-    color: rgb(37, 140, 203);
+    color: #F5C434;
     background-color: transparent;
     padding: 7px;
     border-radius: 50%;
     transition: 0.3s ease-in-out;
   }
   .contacto_footer .preferencia .datoscontacto2 ion-icon:hover {
-    color: rgb(0, 212, 255);
+    color: #F5C434;
     transform: translateY(-3px);
   }
   .contacto_footer .preferencia .numeros_telefono {
@@ -1061,46 +950,26 @@ body {
     font-family: "Montserrat";
     margin-top: 10px;
   }
-  .contacto_footer .ubicacion {
-    position: relative;
+  .btnCotizacionContainer {
+    width: 35vw;
+    font-size: 1.1em !important;
+  }
+  .btnCotizacionContainer .btnCotizacion {
+    text-decoration: none !important;
+  }
+  .proyecto {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    width: 50%;
-    height: 100%;
-    gap: 20px;
-    background-image: url(../images/fondo.png);
   }
-  .contacto_footer .ubicacion::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgb(0, 0, 0);
-    -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  .contacto_footer .ubicacion iframe {
-    border-radius: 20px;
-    border: 1px solid white;
-    width: 300px;
-    height: 325px;
-    box-shadow: 5px 5px 15px rgb(255, 255, 255);
-    z-index: 1000;
-  }
-  .contacto_footer .ubicacion a {
-    list-style-type: none;
-    text-decoration: none;
-    z-index: 1000;
-  }
-  .contacto_footer .ubicacion a span {
-    color: rgb(37, 140, 203);
-    font-weight: 400;
-    font-size: 13px;
-    font-family: "Montserrat";
+  .imgT {
+    height: 350px !important;
+    width: 90vw !important;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1344,7 +1213,7 @@ body {
   .contacto_footer {
     justify-content: center;
     flex-direction: column;
-    height: 1050px;
+    height: 580px !important;
     width: 100%;
     margin-top: 50px;
     gap: 0px;
@@ -1387,5 +1256,35 @@ body {
   .contacto_footer .ubicacion a span {
     font-size: 12px;
     margin-bottom: 10px;
+  }
+  .btnCotizacionContainer {
+    width: 70vw;
+    font-size: 1.1em !important;
+  }
+  .btnCotizacionContainer .btnCotizacion {
+    text-decoration: none !important;
+  }
+  .imgT {
+    height: 350px !important;
+    width: 90vw !important;
+  }
+  .btnCustomContact {
+    width: 35vw !important;
+  }
+  .testItems {
+    margin-top: -70px !important;
+  }
+  .proyecto2 {
+    margin-top: 50px !important;
+  }
+  .proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .descripcion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }/*# sourceMappingURL=style.css.map */
